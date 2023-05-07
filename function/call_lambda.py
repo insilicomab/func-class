@@ -1,0 +1,9 @@
+# リスト8.33
+def walk_list(data, func):
+    for key, value in enumerate(data):
+        func(value, key)
+
+
+if __name__ == '__main__':
+    data = [105, 53, 27, 87, 33]
+    walk_list(data, lambda value, key: print(key, ':', value))
